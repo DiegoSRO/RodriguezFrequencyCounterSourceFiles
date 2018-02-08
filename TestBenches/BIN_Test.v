@@ -5,7 +5,7 @@ module BIN_Test();
     wire[3:0] one, ten ,hundred ,thousands,ten_thousands,hundred_thousands,millions,ten_millions;
     
     initial begin
-        binary = $urandom %26'bFFFFFFF;
+        binary = 7891
         /*not sure at all if this works just trying to get maxval of 26bit number*/
     end
     bin_to_bcd b1(binary, one, ten ,hundred ,thousands,ten_thousands,hundred_thousands,millions,ten_millions);
